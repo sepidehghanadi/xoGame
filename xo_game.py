@@ -84,7 +84,7 @@ def convert(selection):
 
 
 def place_piece(selection, is_x, board):
-    '''This line will prevent users from rewriting the filled squares'''
+    # This line will prevent users from rewriting the filled squares
     if board[selection[0]][selection[1]] == "_":
         board[selection[0]][selection[1]] = "X" if is_x else "O"
     else:
